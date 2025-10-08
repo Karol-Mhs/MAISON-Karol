@@ -44,7 +44,8 @@ function processCSV(csvText) {
     distance: 50
   };
   fuse = new Fuse(publications, fuseOptions);
-  console.log(Indexed ${publications.length}publications);
+  console.log(`Indexed ${publications.length} publications`);
+
 }
 
 function searchPublications(query) {

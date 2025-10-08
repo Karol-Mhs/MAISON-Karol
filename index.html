@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>NASA Space Biology Search Engine</title>
+  <link rel="stylesheet" href="assets/style.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2/dist/fuse.min.js"></script>
+</head>
+<body>
+  <header>
+    <h1>NASA Space Biology Knowledge Explorer</h1>
+    <nav>
+      <button id="tab-search" class="active">Search Articles</button>
+      <button id="tab-chat">Chatbot</button>
+    </nav>
+  </header>
+
+  <main>
+    <section id="search-section">
+      <div class="search-bar">
+        <input id="search-input" type="search" placeholder="Type a word or phrase (e.g. plants, radiation, microgravity)">
+        <button id="search-btn">Search</button>
+      </div>
+      <div id="results"></div>
+    </section>
+
+    <section id="chat-section" style="display:none;">
+      <p>The chatbot module will be integrated later. It will use scraping + summarization pipelines.</p>
+    </section>
+  </main>
+
+  <footer>
+    <small>Source: <a href="https://github.com/jgalazka/SB_publications" target="_blank">SB_publications (608 NASA Space Biology papers)</a></small>
+  </footer>
+
+  <script src="js/utils.js"></script>
+  <script src="js/search.js"></script>
+  <script src="js/chatbot.js"></script>
+</body>
+</html>
